@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resource/main.css">
+</head>
+<body>
+    <div>
+        <table id="path_table" class="table table-striped table-bordered table-sm">
+            <thead class="table-info">
+                <tr>        
+                    <th>host_a</th>
+                    <th>if_a</th>
+                    <th>host_z</th>
+                    <th>if_z</th>
+                    <th>path</th>
+                </tr>
+            </thead>
+            <tbody id="js-tbody">
+                <tr>
+                    <td>host-a</td>
+                    <td class="copy-value" data-clipboard-text="ge-0/0/0">ge-0/0/0</td>
+                    <td>host-b</td>
+                    <td>ge-0/0/0</td>
+                    <td>path_a</td>
+                </tr>
+                <!-- <tr id="host-c_host-d"> -->
+                <tr>
+                    <!-- <td id="host" value="host-c">host-c</td> -->
+                    <td>host-c</td>
+                    <td>ge-0/0/0</td>
+                    <td>host-d</td>
+                    <td>ge-0/0/0</td>
+                    <td>path_b</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button class="btn" data-clipboard-target="#js-tbody">
+            ＊１＊ <img src="./resource/assets/clippy.svg" width="13" alt="Copy to clipboard">
+        </button>
+        <button class="btn" data-clipboard-title="">
+            ＊２＊ <img src="./resource/assets/clippy.svg" width="13" alt="Copy to clipboard">
+        </button>
+        
+        <button class="btn" data-clipboard-text="コピー内容" data-clipboard-title="タイトル">
+            ＊３＊ <img src="./resource/assets/clippy.svg" width="13" alt="Copy to clipboard">
+        </button>
+        <br><br>
+
+        <div id="btn_area"></div>
+
+
+
+    </div>
+    <br>
+
+    <h1>とんかつ</h1>
+    <table>
+        <tr>
+            <th>カロリー</th>
+            <td class="copy-value" data-clipboard-text="303kcal">303kcal</td>
+        </tr>
+        <tr>
+            <th>たんぱく質</th>
+            <td class="copy-value" data-clipboard-text="19.6g">19.6g</td>
+        </tr>
+        <tr>
+            <th>脂質</th>
+            <td class="copy-value" data-clipboard-text="19.7g">19.7g</td>
+        </tr>
+        <tr>
+            <th>炭水化物</th>
+            <td class="copy-value" data-clipboard-text="11.6g">11.6g</td>
+        </tr>
+        <tr>
+            <th>糖質</th>
+            <td class="copy-value" data-clipboard-text="10.9g">10.9g</td>
+        </tr>
+        <tr>
+            <th>食物繊維</th>
+            <td class="copy-value" data-clipboard-text="0.7g">0.7g</td>
+        </tr>
+    </table>
+   
+    <!-- CDN -->
+    <!-- <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script> -->
+    <!-- LOCAL -->
+    <script src="./resource/clipboard.min.js"></script>
+    <script src="./resource/main.js"></script>
+    <!-- <script src="./resource/main2.js"></script> -->
+</body>
+</html>

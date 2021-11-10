@@ -1,0 +1,50 @@
+h1 {
+    text-align: center;
+  }
+  table {
+    width: 80vw;
+    margin: 30px auto 0;
+    border-collapse: collapse;
+  }
+  th {
+    font-weight: normal;
+    width: 40%;
+    background: #eee;
+  }
+  th, td {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+  }
+  .copy-value {
+    cursor: pointer;
+  }
+  .copy-value:hover {
+    background: #f2fafc;
+  }
+
+  .copy-value {
+    cursor: pointer;
+    position: relative;
+  }
+   
+  /* Tooltip */
+  .tooltip::after {
+      content: 'Copied!';
+      background: #555;
+      display: inline-block;
+      color: #fff;
+      border-radius: .4rem;
+      position: absolute;
+      left: 50%;
+      bottom: -.8rem;
+      transform: translate(-50%, 0);
+      font-size: .75rem;
+      padding: 4px 10px 6px 10px;
+      animation: fade-tooltip .5s 1s 1 forwards;
+  }
+   
+  /* Animation */
+  @keyframes fade-tooltip {
+    to { opacity: 0; }
+  }
